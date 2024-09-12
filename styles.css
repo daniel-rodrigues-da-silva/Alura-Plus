@@ -1,0 +1,160 @@
+:root {
+    --branco-principal: #FFFFFF; /* Aqui a gente define a cor branca que vai ser usada no site */
+    --cinza-secundario: #C0C0C0; /* Cor cinza que vai ser usada em alguns lugares */
+    --botao-azul: #167BF7; /* Cor azul que vai nos botões */
+    --cor-de-fundo: #00030C; /* Cor do fundo da página */
+    --botao-azul-efeito:#9bc8ff;
+}
+
+body {
+    background-color: var(--cor-de-fundo); /* Coloca a cor de fundo no corpo da página */
+    color: var(--branco-principal); /* Muda a cor do texto pra branco */
+    font-family: var(--fonte-principal); /* Aplica a fonte que definimos lá em cima */
+    font-size: 16px; /* Tamanho padrão do texto */
+    font-weight: 400; /* Peso da fonte, ou seja, quão grossa ela vai ficar (400 é normal) */
+}
+
+* {
+    margin: 0; /* Tira toda a margem padrão dos elementos */
+    padding: 0; /* Tira todo o preenchimento padrão dos elementos */
+}
+
+.principal {
+    background-image: url("img/Background.png"); /* Coloca uma imagem de fundo na área principal */
+    background-repeat: no-repeat; /* Faz a imagem não se repetir */
+    background-size: contain; /* Faz a imagem se ajustar ao tamanho do contêiner */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto no meio */
+}
+
+.container {
+    height: 100vh; /* Deixa o contêiner ocupando 100% da altura da tela */
+    display: grid; /* Organiza as coisas em formato de grid */
+    grid-template-columns: 50% 50%; /* Divide em duas colunas, cada uma ocupando metade do espaço */
+}
+
+.container__botao {
+    background-color: var(--botao-azul); /* Pinta o botão de azul */
+    border-radius: 5px; /* Deixa as bordas do botão arredondadas */
+    padding: 1em; /* Coloca um espacinho dentro do botão */
+    color: var(--branco-principal); /* Deixa o texto do botão branco */
+    display: block; /* Faz o botão ocupar a linha inteira e empurrar o próximo pra baixo */
+    text-decoration: none; /* Tira o sublinhado do link */
+    margin-bottom: 1em; /* Coloca um espacinho embaixo do botão */
+}
+
+.botao_secundario {
+    background-color: transparent; /* Deixa o fundo do botão secundário transparente */
+    border: 2px solid var(--branco-principal); /* Faz uma borda branca de 2px ao redor do botão */
+}
+
+.container__aviso {
+    color: var(--cinza-secundario); /* Pinta o texto de aviso de cinza */
+    font-size: 12px; /* Deixa o texto de aviso bem pequenininho */
+}
+
+.container__titulo {
+    font-size: 28px; /* Aumenta o tamanho do título */
+    font-weight: 700; /* Deixa o título mais "grosso", estilo negrito */
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* Adiciona espaçamento em cima e embaixo da imagem */
+}
+
+.container__caixa {
+    margin: 0 6em; /* Dá uma folga lateral (espaço) de 6em */
+}
+
+.secudanrio__imagem {
+    width: 80%; /* Deixa a imagem secundária ocupando 80% da largura do contêiner */
+}
+
+.secundario {
+    align-items: center; /* Alinha os itens no meio verticalmente */
+    margin: 0 10em; /* Adiciona espaçamento lateral de 10em */
+}
+
+.descricao__titulo {
+    font-weight: 700; /* Deixa o título da descrição em negrito */
+    font-size: 48px; /* Aumenta bastante o tamanho do título */
+    color: var(--branco-principal); /* Pinta o título de branco */
+    margin-bottom: 0.1em; /* Dá uma margenzinha embaixo */
+}
+
+.descricao__texto {
+    font-weight: 400; /* Deixa o texto normal, sem negrito */
+    font-size: 16px; /* Deixa o texto num tamanho padrão */
+    color: var(--cinza-secundario); /* Pinta o texto de cinza */
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+    margin: 1em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+    
+}
+
+.rodape{
+    text-align: center;
+    color: var(--cinza-secundario);
+    margin: 5em 3;
+}
+
+.lista__link a{
+    display: inline-block;
+    margin-left: 3em;
+    text-decoration: none;
+    color: var(--cinza-secundario);
+
+}
+
+.rodape__texto{
+    margin-top: 2em;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape__logo{
+    margin-bottom: 2em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
+.lista__link a:active{
+    color: aquamarine;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
